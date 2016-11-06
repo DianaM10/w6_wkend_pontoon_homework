@@ -1,9 +1,11 @@
 package game_management;
+import game_management.*;
+import java.util.*;
 
 public class Player{
 
 private String name;
-// private ArrayList<Card> hand = new ArrayList<Card>();
+private ArrayList<Card> hand = new ArrayList<Card>();
 
 
 public Player(String name){
@@ -13,8 +15,9 @@ public Player(String name){
 public String getName(){
   return this.name;
 }
-// public void setHand(){
-//   this.hand = new ArrayList<Card>();
-// }
+
+public void setHand(){
+  this.hand = new ArrayList<Card>();
+}
 
 }

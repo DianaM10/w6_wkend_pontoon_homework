@@ -1,8 +1,8 @@
 package game_management;
 
 public enum SuitType {
-  SPADE,
-  HEART,
-  CLUB,
-  DIAMOND
+  SPADES,
+  HEARTS,
+  CLUBS,
+  DIAMONDS
 }

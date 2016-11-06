@@ -8,7 +8,7 @@ public class CardTest {
 
   @Before 
   public void before() {
-    card = new Card(ValueType.ACE, SuitType.SPADE);
+    card = new Card(ValueType.ACE, SuitType.SPADES);
   }
 
   @Test
@@ -18,7 +18,7 @@ public class CardTest {
 
   @Test
   public void canGetSuitType() {
-    assertEquals(SuitType.SPADE, card.getSuit());
+    assertEquals(SuitType.SPADES, card.getSuit());
   }
 
   @Test 
@@ -29,13 +29,18 @@ public class CardTest {
 
   @Test 
   public void canSetSuitType() {
-    card.setSuit(SuitType.HEART);
-    assertEquals(SuitType.HEART, card.getSuit());
+    card.setSuit(SuitType.HEARTS);
+    assertEquals(SuitType.HEARTS, card.getSuit());
   }
 
   @Test
   public void canGetCardNumber() {
-    assertEquals(1, card.getCardNumber());
+    assertEquals(11, card.getCardNumber());
+  }
+
+  @Test
+  public void canPrintCard() {
+    assertEquals("ACE of SPADES", card.toString());
   }
 
 

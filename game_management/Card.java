@@ -30,6 +30,10 @@ public class Card {
     return this.value.getNumber();
   }
 
+  public String toString() {
+    return getValue() + " of " + getSuit();
+    
+  }
 
 
 }
