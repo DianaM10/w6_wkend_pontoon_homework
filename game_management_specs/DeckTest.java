@@ -1,16 +1,23 @@
-// import static org.junit.Assert.*;
-// import org.junit.*;
-// import game_management.*;
+import static org.junit.Assert.*;
+import org.junit.*;
+import game_management.*;
 
-// public class DeckTest {
+public class DeckTest {
 
-//   ArrayList deck;
-//   Card card;
-//   ValueType value;
-//   SuitType suit;
+  
+  Deck deck;
+ 
 
-//   @Before 
-//   public void before() {
-//     deck = new ArrayList();
-//   }
-// }
+  @Before 
+  public void before() {
+    this.deck = new Deck();
+  }
+
+
+  @Test
+  public void hasDeckOf52() {
+    assertEquals(52, deck.deckSize());
+  }
+
+  
+}

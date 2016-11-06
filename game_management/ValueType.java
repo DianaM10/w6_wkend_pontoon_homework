@@ -10,19 +10,20 @@ public enum ValueType {
   EIGHT(8),
   NINE(9),
   TEN(10),
-  JACK(11),
-  QUEEN(12),
-  KING(13),
-  ACE(14);
+  JACK(10),
+  QUEEN(10),
+  KING(10),
+  ACE(1);
  
-  private int ValueType;
+  private int number;
  
-  private ValueType (int value)
+  private ValueType (int number)
   {
-    this.ValueType = value;
+    this.number = number;
   }
  
-  public int getValueType() {
-    return ValueType;
+  public int getNumber() {
+    return number;
   }
 }
+

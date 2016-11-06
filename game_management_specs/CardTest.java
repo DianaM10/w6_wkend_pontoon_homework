@@ -33,6 +33,11 @@ public class CardTest {
     assertEquals(SuitType.HEART, card.getSuit());
   }
 
+  @Test
+  public void canGetCardNumber() {
+    assertEquals(1, card.getCardNumber());
+  }
+
 
 
 

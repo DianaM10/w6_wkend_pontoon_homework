@@ -26,6 +26,10 @@ public class Card {
     this.suit = suit;
   }
 
+  public int getCardNumber() {
+    return this.value.getNumber();
+  }
+
 
 
 }
