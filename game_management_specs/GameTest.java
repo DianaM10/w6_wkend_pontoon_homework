@@ -27,6 +27,7 @@ public class GameTest {
   public void dealsCards() {
     game.addPlayer(player1);
     game.addPlayer(player2);
+    deck.shuffleDeck();
     deck.deal();
     assertNotNull(player1.getHand());
     assertNotNull(player2.getHand());
