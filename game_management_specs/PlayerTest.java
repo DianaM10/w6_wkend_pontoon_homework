@@ -23,7 +23,7 @@ public class PlayerTest {
     card2 = new Card(ValueType.NINE, SuitType.DIAMONDS);
     card3 = new Card(ValueType.SIX, SuitType.HEARTS);
     card4 = new Card(ValueType.SEVEN, SuitType.CLUBS);
-    player1.setHand();
+    // player1.setHand().addCard(card1).addCard(card2);
 
   }
 
@@ -35,9 +35,22 @@ public class PlayerTest {
 
   @Test 
   public void handStartsEmpty() {
-    assertEquals(0, player2.handNumberOfCards());
+    assertEquals(0, player2.numberOfCards());
 
   }
+
+  @Test 
+  public void canCountPlayersHand() {
+    player2.addCard(card3);
+    player2.addCard(card4);
+    assertEquals(2, player2.numberOfCards());
+  }
+
+  // @Test
+  // public void canSetHand() {
+  //   player1.addCard(card1);
+  //   assertEquals(card1, player1.getHand());
+  // }
 
 }
 

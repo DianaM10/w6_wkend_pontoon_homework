@@ -24,8 +24,23 @@ public ArrayList<Card> getHand() {
   return this.hand;
 }
 
-public int handNumberOfCards() {
+public int numberOfCards() {
   return this.hand.size();
 }
+
+public void addCard(Card card) {
+  this.hand.add(card);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 }
