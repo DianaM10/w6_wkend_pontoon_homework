@@ -5,7 +5,7 @@ import java.util.*;
 public class Player{
 
 private String name;
-private ArrayList<Card> hand = new ArrayList<Card>();
+ArrayList<Card> hand = new ArrayList<Card>();
 
 
 public Player(String name){
@@ -18,6 +18,14 @@ public String getName(){
 
 public void setHand(){
   this.hand = new ArrayList<Card>();
+}
+
+public ArrayList<Card> getHand() {
+  return this.hand;
+}
+
+public int handNumberOfCards() {
+  return this.hand.size();
 }
 
 }
